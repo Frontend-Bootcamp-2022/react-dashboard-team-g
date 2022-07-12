@@ -1,12 +1,27 @@
 import StatusCSS from "./Status.module.css"
 
-import { StatusDot } from "../icon-component/Icon"
+const Status = (props) => {
+    let color;
+    let status;
+    switch (props.status) {
+        case "active":
+            color = "#00DB99";
+            status = "Active";
+            break;
+        case "inactive":
+            color = "#FF285C"; 
+            status = "Inactive";
+            break;
+        case "hold":
+            color = "#F0BB00";
+            status = "On hold";
+            break;
+      };
 
-const Status = () => {
     return (
         <div className={StatusCSS.container}>
-            <StatusDot />
-            <p className={StatusCSS.name}>Active</p>
+            <div className={StatusCSS.status} style={{background: `${color}`}} />
+            <p style={{color: `${color}`}} className={StatusCSS.name}>{status}</p>
         </div>
     )
 }
