@@ -1,7 +1,12 @@
+import Header from "./components/Header/Header";
+import "./App.scss";
+
 const App = () => {
   return (
-    <h1>React Dashboard</h1>
+    <div className="App">
+      <Header />
+    </div>
   );
-}
+};
 
 export default App;
