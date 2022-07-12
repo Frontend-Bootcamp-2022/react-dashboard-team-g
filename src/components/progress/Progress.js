@@ -1,22 +1,22 @@
 import ProgressCSS from "./Progress.module.css"
 
-const ProgressBar = () => {
+const ProgressBar = (props) => {
     return (
         <div className={ProgressCSS.empty}>
-            <div className={ProgressCSS.filled}>
+            <div style={{width: `${props.percentage}%` }}  className={ProgressCSS.filled}>
             </div>
         </div>
     )
 }
 
-export const Progress = () => {
+export const Progress = (props) => {
     return (
         <div className={ProgressCSS.container}>
             <div className={ProgressCSS.header}>
                 <div className={ProgressCSS.title}>Progress</div>
-                <div className={ProgressCSS.percent}>67%</div>
+                <div className={ProgressCSS.percent}>{props.percentage}%</div>
             </div>
-            <ProgressBar />
+            <ProgressBar percentage={props.percentage} />
         </div>
     )
 }

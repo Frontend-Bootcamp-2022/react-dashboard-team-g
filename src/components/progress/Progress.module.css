@@ -28,12 +28,9 @@
 
 .empty {
     position: relative;
-    /* width: 447px; */
     height: 8px;
     border-radius: 75px;
-
     background-color: #F1F2F7;
-
     margin: 0;
     padding: 0;
     margin-top: 8px;
@@ -43,10 +40,8 @@
     position: absolute;
     top: 0;
     left: 0;
-
-    width: 243px;
     height: 8px;
+    width: 100%;
     border-radius: 75px;
-
     background-color: #1BE3A7;
 }
