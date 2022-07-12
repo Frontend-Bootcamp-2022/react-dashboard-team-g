@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 13px;
+    color: #717986;
+}
+
+.profiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4px;
+
+}
+
+.img {
+    background-color: coral;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
