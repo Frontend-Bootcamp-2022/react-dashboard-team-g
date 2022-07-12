@@ -6,3 +6,19 @@
     
     gap: 30px;
 }
+
+.plus {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid #8B8B8B;
+    border-radius: 50%;
+}
+
+.plus:hover {
+    background: #F2F2F2;
+}
