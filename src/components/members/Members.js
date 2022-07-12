@@ -1,28 +1,35 @@
+import { useEffect, useState } from "react"
 import MembersCSS from "./Members.module.css"
+import IconBarCSS from "../icon-component/IconBar.module.css"
 
-// const Member = () => {
-//     return (
-//         <img src="https://i.picsum.photos/id/137/200/200.jpg?hmac=qhNK8PzcRQJaCJlGEj1q5ceRIkKkfPmVuOwE5ZInXA8"></img>
-//     )
-// }
+import { Plus } from "../icon-component/Icon"
 
-// const Members = Member.map((number) => {
-//     return (
-//         number * 5
-//     )
-// })
+
+const Member = (props) => {
+    return (
+        <img className={MembersCSS.img} src={props.url}></img>
+    )
+}
 
 export const MembersBar = () => {
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        fetch("https://randomuser.me/api/?results=5").then(res => res.json()).then(data => setUsers(data.results))
+    },[])
+
     return (
         <div className={MembersCSS.container}>
             <div className={MembersCSS.title}>Members</div>
-            <div className={MembersCSS.profiles}>
-                <div className={MembersCSS.img}></div>
-                <div className={MembersCSS.img}></div>
-                <div className={MembersCSS.img}></div>
-                {/* {Member.map((profile) => (
-                    <div className={MembersCSS.img}>{profile}</div>
-                ))} */}
+            <div className={MembersCSS.images}>
+                <div className={MembersCSS.profiles}>
+                    {users.map((profile, index) => (
+                        <Member key={index} url={profile.picture.thumbnail}  />
+                    ))}
+                </div>
+                <div className={IconBarCSS.plus}>
+                    <Plus />
+                </div>
             </div>
         </div>
     )
