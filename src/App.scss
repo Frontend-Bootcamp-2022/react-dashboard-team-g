@@ -2,6 +2,19 @@
   box-sizing: border-box;
 }
 body {
-  margin: 16px;
-  padding: 16px;
+  margin: 0px;
+  padding: 0;
 }
+
+.Wrapper {
+  display: flex;
+  
+}
+
+.App {
+  display: flex;
+  flex: 0 1 85%;
+  flex-direction: column;
+
+}
+

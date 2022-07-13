@@ -6,11 +6,13 @@ import "./App.scss";
 
 const App = () => {
   return (
-    <div className="App">
+    <div className="Wrapper">
       <Sidebar></Sidebar>
-      <HeaderTop />
-      <div className={CardTableCSS.table}>
-        <CardTable />
+      <div className="App">
+        <HeaderTop />
+        <div className={CardTableCSS.table}>
+          <CardTable />
+        </div>
       </div>
     </div>
   );
