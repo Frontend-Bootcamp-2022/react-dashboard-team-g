@@ -15,6 +15,7 @@ const Header = () => {
         <Search style={style} />
         <div className={style.user}>
           <NotificationBar style={style} />
+
           <Profile style={style} />
         </div>
       </div>

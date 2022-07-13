@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap%27");
+
 .header {
   display: flex;
   flex-direction: column;
@@ -14,7 +16,7 @@
       justify-content: flex-start;
 
       span {
-        font-family: "Roboto";
+        font-family: "Roboto", sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 24px;
@@ -62,6 +64,10 @@
         svg {
           width: 20px;
           height: 20px;
+          &:nth-child(2) {
+            width: 25px;
+            height: 25px;
+          }
         }
       }
 
@@ -86,7 +92,7 @@
           align-items: flex-start;
           justify-content: center;
           span {
-            font-family: "Roboto";
+            font-family: "Roboto", sans-serif;
             font-style: normal;
             font-weight: 500;
             font-size: 16px;
@@ -94,7 +100,7 @@
             color: #25364f;
           }
           a {
-            font-family: "Roboto";
+            font-family: "Roboto", sans-serif;
             font-style: normal;
             font-weight: 400;
             font-size: 12px;
@@ -121,14 +127,18 @@
         border-radius: 26px;
         padding: 8px 16px;
         margin: 0 16px 0 0;
+        cursor: pointer;
 
         span {
-          font-family: "Roboto";
+          font-family: "Roboto", sans-serif;
           font-style: normal;
           font-weight: 500;
           font-size: 18px;
           line-height: 21px;
           color: #ffffff;
+          &:first-child {
+            font-size: 20px;
+          }
         }
       }
     }
@@ -146,13 +156,14 @@
         display: flex;
         gap: 20px;
         span {
-          font-family: "Roboto";
+          font-family: "Roboto", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
           line-height: 16px;
           color: #8b8b8b;
           opacity: 0.7;
+          cursor: pointer;
           &:first-child {
             color: #000;
             opacity: 1;
@@ -166,18 +177,16 @@
         justify-content: center;
         gap: 20px;
         span {
-          font-family: "Roboto";
+          font-family: "Roboto", sans-serif;
           font-style: normal;
           font-weight: 400;
           font-size: 14px;
           line-height: 16px;
           color: #8b8b8b;
           opacity: 0.7;
+          cursor: pointer;
         }
         svg {
-          path {
-            fill: #8b8b8b;
-          }
           &:hover {
             cursor: pointer;
 
