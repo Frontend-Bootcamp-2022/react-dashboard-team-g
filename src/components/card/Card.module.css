@@ -1,0 +1,32 @@
+.table {
+    display: flex;
+    padding: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    min-width: 495px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color:  #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    padding: 24px;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 50px 0px rgba(229,229,229,0.8)
+}
+
+.card h3 {
+    font-weight: 400;
+    font-size: 12px;
+    color: #717986;
+
+    margin: 0;
+    padding: 0;
+}

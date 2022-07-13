@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 16px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.title {
+    font-weight: 500;
+    font-size: 13px;
+    color: #717986;
+}
+
+.percent {
+    font-weight: 400;
+    font-size: 12px;
+    color: #3C557A;
+}
+
+.empty {
+    position: relative;
+    height: 8px;
+    border-radius: 75px;
+    background-color: #F1F2F7;
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.filled {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8px;
+    width: 100%;
+    border-radius: 75px;
+    background-color: #1BE3A7;
+}

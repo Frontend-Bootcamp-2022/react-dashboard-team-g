@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <link rel="icon" href="http://localhost:3000/favicon.ico">
+  <link href="./React Dashboard_files/css2" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>React Dashboard</title>
+<script defer="" src="./React Dashboard_files/bundle.js.indir"></script><style>.Card_table__owFhD {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    
+    margin: 30px;
+}
+
+.Card_card__T6wSe {
+    width: 495px;
+    height: 300px;
+
+    background-color:  #FFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+
+    font-family: 'Roboto', sans-serif;
+
+    padding: 24px;
+}
+
+
+.Card_card__T6wSe h3 {
+    font-weight: 400;
+    font-size: 12px;
+    color: #717986;
+
+    margin: 0;
+    padding: 0;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL2NhcmQvQ2FyZC5tb2R1bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQixlQUFlO0lBQ2YsOEJBQThCO0lBQzlCLG1CQUFtQjtJQUNuQixTQUFTOztJQUVULFlBQVk7QUFDaEI7O0FBRUE7SUFDSSxZQUFZO0lBQ1osYUFBYTs7SUFFYix1QkFBdUI7SUFDdkIseUJBQXlCO0lBQ3pCLGtCQUFrQjs7SUFFbEIsaUNBQWlDOztJQUVqQyxhQUFhO0FBQ2pCOzs7QUFHQTtJQUNJLGdCQUFnQjtJQUNoQixlQUFlO0lBQ2YsY0FBYzs7SUFFZCxTQUFTO0lBQ1QsVUFBVTtBQUNkIiwic291cmNlc0NvbnRlbnQiOlsiLnRhYmxlIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gICAgZmxleC13cmFwOiB3cmFwO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGdhcDogMjBweDtcclxuICAgIFxyXG4gICAgbWFyZ2luOiAzMHB4O1xyXG59XHJcblxyXG4uY2FyZCB7XHJcbiAgICB3aWR0aDogNDk1cHg7XHJcbiAgICBoZWlnaHQ6IDMwMHB4O1xyXG5cclxuICAgIGJhY2tncm91bmQtY29sb3I6ICAjRkZGO1xyXG4gICAgYm9yZGVyOiAxcHggc29saWQgI0U1RTVFNTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDhweDtcclxuXHJcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XHJcblxyXG4gICAgcGFkZGluZzogMjRweDtcclxufVxyXG5cclxuXHJcbi5jYXJkIGgzIHtcclxuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XHJcbiAgICBmb250LXNpemU6IDEycHg7XHJcbiAgICBjb2xvcjogIzcxNzk4NjtcclxuXHJcbiAgICBtYXJnaW46IDA7XHJcbiAgICBwYWRkaW5nOiAwO1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.Header_header__V3H1D {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 16px;
+}
+
+.Header_title__UWF7H {
+    font-weight: 500;
+    font-size: 18px;
+    color: #3C557A;
+
+    margin: 0;
+    padding: 0;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL2hlYWRlci9IZWFkZXIubW9kdWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsOEJBQThCO0lBQzlCLG1CQUFtQjs7SUFFbkIsbUJBQW1CO0FBQ3ZCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZixjQUFjOztJQUVkLFNBQVM7SUFDVCxVQUFVO0FBQ2QiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuXHJcbiAgICBtYXJnaW4tYm90dG9tOiAxNnB4O1xyXG59XHJcblxyXG4udGl0bGUge1xyXG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcclxuICAgIGZvbnQtc2l6ZTogMThweDtcclxuICAgIGNvbG9yOiAjM0M1NTdBO1xyXG5cclxuICAgIG1hcmdpbjogMDtcclxuICAgIHBhZGRpbmc6IDA7XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.IconBar_bar__ECJMi {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 30px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL2ljb24tY29tcG9uZW50L0ljb25CYXIubW9kdWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjs7SUFFbkIsU0FBUztBQUNiIiwic291cmNlc0NvbnRlbnQiOlsiLmJhciB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIFxyXG4gICAgZ2FwOiAzMHB4O1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.Status_container__SExAx {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.Status_name__RvJe5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    color: #00DB99;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL3N0YXR1cy9TdGF0dXMubW9kdWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYixtQkFBbUI7SUFDbkIsMkJBQTJCO0lBQzNCLG1CQUFtQjtJQUNuQixRQUFRO0FBQ1o7O0FBRUE7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZixjQUFjO0FBQ2xCIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcclxuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbiAgICBnYXA6IDhweDtcclxufVxyXG5cclxuLm5hbWUge1xyXG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xyXG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcclxuICAgIGZvbnQtc2l6ZTogMTNweDtcclxuICAgIGNvbG9yOiAjMDBEQjk5O1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.Info_container__cXXXG {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 10px 0px;
+}
+
+.Info_signalContainer__YiL-e {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    background-color: #F9F9F9;
+    border-radius: 7px;
+
+    margin-right: 8px;
+}
+
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL2luZm8vSW5mby5tb2R1bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1COztJQUVuQixnQkFBZ0I7QUFDcEI7O0FBRUE7SUFDSSxhQUFhO0lBQ2IsbUJBQW1CO0lBQ25CLHVCQUF1QjtJQUN2QixtQkFBbUI7SUFDbkIsUUFBUTs7SUFFUix5QkFBeUI7SUFDekIsa0JBQWtCOztJQUVsQixpQkFBaUI7QUFDckIiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuXHJcbiAgICBtYXJnaW46IDEwcHggMHB4O1xyXG59XHJcblxyXG4uc2lnbmFsQ29udGFpbmVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xyXG4gICAgZ2FwOiA4cHg7XHJcblxyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI0Y5RjlGOTtcclxuICAgIGJvcmRlci1yYWRpdXM6IDdweDtcclxuXHJcbiAgICBtYXJnaW4tcmlnaHQ6IDhweDtcclxufVxyXG5cclxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.Signal_container__QG9gF {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    border-radius: 7px;
+
+    padding: 16px 20px;
+
+}
+
+.Signal_number__n18zi {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #3C557A;
+}
+
+.Signal_name__DB\+QP {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #717986;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL3NpZ25hbC9TaWduYWwubW9kdWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGFBQWE7SUFDYixzQkFBc0I7SUFDdEIsdUJBQXVCO0lBQ3ZCLG1CQUFtQjtJQUNuQixRQUFROztJQUVSLGtCQUFrQjs7SUFFbEIsa0JBQWtCOztBQUV0Qjs7QUFFQTtJQUNJLGlDQUFpQztJQUNqQyxnQkFBZ0I7SUFDaEIsZUFBZTtJQUNmLGNBQWM7QUFDbEI7O0FBRUE7SUFDSSxpQ0FBaUM7SUFDakMsZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZixjQUFjO0FBQ2xCIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuICAgIGdhcDogNHB4O1xyXG5cclxuICAgIGJvcmRlci1yYWRpdXM6IDdweDtcclxuXHJcbiAgICBwYWRkaW5nOiAxNnB4IDIwcHg7XHJcblxyXG59XHJcblxyXG4ubnVtYmVyIHtcclxuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvJywgc2Fucy1zZXJpZjtcclxuICAgIGZvbnQtd2VpZ2h0OiA3MDA7XHJcbiAgICBmb250LXNpemU6IDE4cHg7XHJcbiAgICBjb2xvcjogIzNDNTU3QTtcclxufVxyXG5cclxuLm5hbWUge1xyXG4gICAgZm9udC1mYW1pbHk6ICdSb2JvdG8nLCBzYW5zLXNlcmlmO1xyXG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcclxuICAgIGZvbnQtc2l6ZTogMTJweDtcclxuICAgIGNvbG9yOiAjNzE3OTg2O1xyXG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.Date_container__LJZZi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.Date_title__wTekM {
+    font-weight: 400;
+    font-size: 12px;
+    color: #717986;
+}
+
+.Date_text__oTuCO {
+    font-weight: 500;
+    font-size: 13px;
+    color: #717986;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL2RhdGUvRGF0ZS5tb2R1bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7SUFDdkIsdUJBQXVCO0lBQ3ZCLFFBQVE7O0lBRVIsaUNBQWlDO0FBQ3JDOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZixjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZixjQUFjO0FBQ2xCIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcclxuICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xyXG4gICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XHJcbiAgICBnYXA6IDhweDtcclxuXHJcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XHJcbn1cclxuXHJcbi50aXRsZSB7XHJcbiAgICBmb250LXdlaWdodDogNDAwO1xyXG4gICAgZm9udC1zaXplOiAxMnB4O1xyXG4gICAgY29sb3I6ICM3MTc5ODY7XHJcbn1cclxuXHJcbi50ZXh0IHtcclxuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XHJcbiAgICBmb250LXNpemU6IDEzcHg7XHJcbiAgICBjb2xvcjogIzcxNzk4NjtcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style><style>.Members_container__9Mys7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.Members_title__qKwD5 {
+    font-weight: 500;
+    font-size: 13px;
+    color: #717986;
+}
+
+.Members_profiles__7qW0w {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4px;
+
+}
+
+.Members_img__JSPXM {
+    background-color: coral;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL21lbWJlcnMvTWVtYmVycy5tb2R1bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksYUFBYTtJQUNiLHNCQUFzQjtJQUN0Qix1QkFBdUI7SUFDdkIsdUJBQXVCO0lBQ3ZCLFNBQVM7O0lBRVQsaUNBQWlDO0FBQ3JDOztBQUVBO0lBQ0ksZ0JBQWdCO0lBQ2hCLGVBQWU7SUFDZixjQUFjO0FBQ2xCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsdUJBQXVCO0lBQ3ZCLFFBQVE7O0FBRVo7O0FBRUE7SUFDSSx1QkFBdUI7SUFDdkIsV0FBVztJQUNYLFlBQVk7SUFDWixrQkFBa0I7QUFDdEIiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xyXG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XHJcbiAgICBhbGlnbi1pdGVtczogZmxleC1zdGFydDtcclxuICAgIGdhcDogMTJweDtcclxuXHJcbiAgICBmb250LWZhbWlseTogJ1JvYm90bycsIHNhbnMtc2VyaWY7XHJcbn1cclxuXHJcbi50aXRsZSB7XHJcbiAgICBmb250LXdlaWdodDogNTAwO1xyXG4gICAgZm9udC1zaXplOiAxM3B4O1xyXG4gICAgY29sb3I6ICM3MTc5ODY7XHJcbn1cclxuXHJcbi5wcm9maWxlcyB7XHJcbiAgICBkaXNwbGF5OiBmbGV4O1xyXG4gICAgZmxleC1kaXJlY3Rpb246IHJvdztcclxuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcclxuICAgIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xyXG4gICAgZ2FwOiA0cHg7XHJcblxyXG59XHJcblxyXG4uaW1nIHtcclxuICAgIGJhY2tncm91bmQtY29sb3I6IGNvcmFsO1xyXG4gICAgd2lkdGg6IDMycHg7XHJcbiAgICBoZWlnaHQ6IDMycHg7XHJcbiAgICBib3JkZXItcmFkaXVzOiA1MCU7XHJcbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>.Progress_container__XUEyd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 16px;
+}
+
+.Progress_header__LaIyz {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.Progress_title__VZsl7 {
+    font-weight: 500;
+    font-size: 13px;
+    color: #717986;
+}
+
+.Progress_percent__efuIA {
+    font-weight: 400;
+    font-size: 12px;
+    color: #3C557A;
+}
+
+.Progress_empty__DJpw8 {
+    position: relative;
+    /* width: 447px; */
+    height: 8px;
+    border-radius: 75px;
+
+    background-color: #F1F2F7;
+
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+}
+
+.Progress_filled__zrjS2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 243px;
+    height: 8px;
+    border-radius: 75px;
+
+    background-color: #1BE3A7;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9jb21wb25lbnRzL3Byb2dyZXNzL1Byb2dyZXNzLm1vZHVsZS5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxhQUFhO0lBQ2Isc0JBQXNCO0lBQ3RCLHVCQUF1Qjs7SUFFdkIsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksYUFBYTtJQUNiLG1CQUFtQjtJQUNuQiw4QkFBOEI7SUFDOUIsbUJBQW1COztBQUV2Qjs7QUFFQTtJQUNJLGdCQUFnQjtJQUNoQixlQUFlO0lBQ2YsY0FBYztBQUNsQjs7QUFFQTtJQUNJLGdCQUFnQjtJQUNoQixlQUFlO0lBQ2YsY0FBYztBQUNsQjs7QUFFQTtJQUNJLGtCQUFrQjtJQUNsQixrQkFBa0I7SUFDbEIsV0FBVztJQUNYLG1CQUFtQjs7SUFFbkIseUJBQXlCOztJQUV6QixTQUFTO0lBQ1QsVUFBVTtJQUNWLGVBQWU7QUFDbkI7O0FBRUE7SUFDSSxrQkFBa0I7SUFDbEIsTUFBTTtJQUNOLE9BQU87O0lBRVAsWUFBWTtJQUNaLFdBQVc7SUFDWCxtQkFBbUI7O0lBRW5CLHlCQUF5QjtBQUM3QiIsInNvdXJjZXNDb250ZW50IjpbIi5jb250YWluZXIge1xyXG4gICAgZGlzcGxheTogZmxleDtcclxuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XHJcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcclxuXHJcbiAgICBtYXJnaW4tdG9wOiAxNnB4O1xyXG59XHJcblxyXG4uaGVhZGVyIHtcclxuICAgIGRpc3BsYXk6IGZsZXg7XHJcbiAgICBmbGV4LWRpcmVjdGlvbjogcm93O1xyXG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xyXG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcclxuXHJcbn1cclxuXHJcbi50aXRsZSB7XHJcbiAgICBmb250LXdlaWdodDogNTAwO1xyXG4gICAgZm9udC1zaXplOiAxM3B4O1xyXG4gICAgY29sb3I6ICM3MTc5ODY7XHJcbn1cclxuXHJcbi5wZXJjZW50IHtcclxuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XHJcbiAgICBmb250LXNpemU6IDEycHg7XHJcbiAgICBjb2xvcjogIzNDNTU3QTtcclxufVxyXG5cclxuLmVtcHR5IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIC8qIHdpZHRoOiA0NDdweDsgKi9cclxuICAgIGhlaWdodDogOHB4O1xyXG4gICAgYm9yZGVyLXJhZGl1czogNzVweDtcclxuXHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRjFGMkY3O1xyXG5cclxuICAgIG1hcmdpbjogMDtcclxuICAgIHBhZGRpbmc6IDA7XHJcbiAgICBtYXJnaW4tdG9wOiA4cHg7XHJcbn1cclxuXHJcbi5maWxsZWQge1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOiAwO1xyXG4gICAgbGVmdDogMDtcclxuXHJcbiAgICB3aWR0aDogMjQzcHg7XHJcbiAgICBoZWlnaHQ6IDhweDtcclxuICAgIGJvcmRlci1yYWRpdXM6IDc1cHg7XHJcblxyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFCRTNBNztcclxufSJdLCJzb3VyY2VSb290IjoiIn0= */</style></head>
+
+<body>
+  <div id="root"><div class="Card_table__owFhD"><div class="Card_card__T6wSe"><div class="Header_header__V3H1D"><div><h2 class="Header_title__UWF7H">Project Title goes here</h2></div><div class="IconBar_bar__ECJMi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.84 2.96L13.04 6.16L3.2 16H0V12.8L9.84 2.96ZM10.96 1.84L12.8 0L16 3.2L14.16 5.04L10.96 1.84Z" fill="#8B8B8B"></path></svg><svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4C3.10667 4 4 3.10667 4 2C4 0.893333 3.10667 0 2 0C0.893333 0 0 0.893333 0 2C0 3.10667 0.893333 4 2 4ZM2 6C0.893333 6 0 6.89333 0 8C0 9.10667 0.893333 10 2 10C3.10667 10 4 9.10667 4 8C4 6.89333 3.10667 6 2 6ZM2 12C0.893333 12 0 12.8933 0 14C0 15.1067 0.893333 16 2 16C3.10667 16 4 15.1067 4 14C4 12.8933 3.10667 12 2 12Z" fill="#8B8B8B"></path></svg></div></div><div class="Status_container__SExAx"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4" cy="4" r="4" fill="#00DB99"></circle></svg><p class="Status_name__RvJe5">Active</p></div><div class="Info_container__cXXXG"><div><div class="Date_container__LJZZi"><div class="Date_title__wTekM">Start date</div><div class="Date_text__oTuCO">12 Sep 2022</div></div></div><div class="Info_signalContainer__YiL-e"><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">14</div><div class="Signal_name__DB+QP">Tasks</div></div><svg width="2" height="42" viewBox="0 0 1 42" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.5" y1="2.70594e-08" x2="0.499998" y2="42" stroke="#CDDCEE"></line></svg><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">95</div><div class="Signal_name__DB+QP">Users</div></div></div></div><div class="Members_container__9Mys7"><div class="Members_title__qKwD5">Members</div><div class="Members_profiles__7qW0w"><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div></div></div><div class="Progress_container__XUEyd"><div class="Progress_header__LaIyz"><div class="Progress_title__VZsl7">Progress</div><div class="Progress_percent__efuIA">67%</div></div><div class="Progress_empty__DJpw8"><div class="Progress_filled__zrjS2"></div></div></div></div><div class="Card_card__T6wSe"><div class="Header_header__V3H1D"><div><h2 class="Header_title__UWF7H">Project Title goes here</h2></div><div class="IconBar_bar__ECJMi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.84 2.96L13.04 6.16L3.2 16H0V12.8L9.84 2.96ZM10.96 1.84L12.8 0L16 3.2L14.16 5.04L10.96 1.84Z" fill="#8B8B8B"></path></svg><svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4C3.10667 4 4 3.10667 4 2C4 0.893333 3.10667 0 2 0C0.893333 0 0 0.893333 0 2C0 3.10667 0.893333 4 2 4ZM2 6C0.893333 6 0 6.89333 0 8C0 9.10667 0.893333 10 2 10C3.10667 10 4 9.10667 4 8C4 6.89333 3.10667 6 2 6ZM2 12C0.893333 12 0 12.8933 0 14C0 15.1067 0.893333 16 2 16C3.10667 16 4 15.1067 4 14C4 12.8933 3.10667 12 2 12Z" fill="#8B8B8B"></path></svg></div></div><div class="Status_container__SExAx"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4" cy="4" r="4" fill="#00DB99"></circle></svg><p class="Status_name__RvJe5">Active</p></div><div class="Info_container__cXXXG"><div><div class="Date_container__LJZZi"><div class="Date_title__wTekM">Start date</div><div class="Date_text__oTuCO">12 Sep 2022</div></div></div><div class="Info_signalContainer__YiL-e"><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">14</div><div class="Signal_name__DB+QP">Tasks</div></div><svg width="1" height="42" viewBox="0 0 1 42" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.5" y1="2.70594e-08" x2="0.499998" y2="42" stroke="#CDDCEE"></line></svg><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">95</div><div class="Signal_name__DB+QP">Users</div></div></div></div><div class="Members_container__9Mys7"><div class="Members_title__qKwD5">Members</div><div class="Members_profiles__7qW0w"><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div></div></div><div class="Progress_container__XUEyd"><div class="Progress_header__LaIyz"><div class="Progress_title__VZsl7">Progress</div><div class="Progress_percent__efuIA">67%</div></div><div class="Progress_empty__DJpw8"><div class="Progress_filled__zrjS2"></div></div></div></div><div class="Card_card__T6wSe"><div class="Header_header__V3H1D"><div><h2 class="Header_title__UWF7H">Project Title goes here</h2></div><div class="IconBar_bar__ECJMi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.84 2.96L13.04 6.16L3.2 16H0V12.8L9.84 2.96ZM10.96 1.84L12.8 0L16 3.2L14.16 5.04L10.96 1.84Z" fill="#8B8B8B"></path></svg><svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4C3.10667 4 4 3.10667 4 2C4 0.893333 3.10667 0 2 0C0.893333 0 0 0.893333 0 2C0 3.10667 0.893333 4 2 4ZM2 6C0.893333 6 0 6.89333 0 8C0 9.10667 0.893333 10 2 10C3.10667 10 4 9.10667 4 8C4 6.89333 3.10667 6 2 6ZM2 12C0.893333 12 0 12.8933 0 14C0 15.1067 0.893333 16 2 16C3.10667 16 4 15.1067 4 14C4 12.8933 3.10667 12 2 12Z" fill="#8B8B8B"></path></svg></div></div><div class="Status_container__SExAx"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4" cy="4" r="4" fill="#00DB99"></circle></svg><p class="Status_name__RvJe5">Active</p></div><div class="Info_container__cXXXG"><div><div class="Date_container__LJZZi"><div class="Date_title__wTekM">Start date</div><div class="Date_text__oTuCO">12 Sep 2022</div></div></div><div class="Info_signalContainer__YiL-e"><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">14</div><div class="Signal_name__DB+QP">Tasks</div></div><svg width="1" height="42" viewBox="0 0 1 42" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.5" y1="2.70594e-08" x2="0.499998" y2="42" stroke="#CDDCEE"></line></svg><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">95</div><div class="Signal_name__DB+QP">Users</div></div></div></div><div class="Members_container__9Mys7"><div class="Members_title__qKwD5">Members</div><div class="Members_profiles__7qW0w"><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div></div></div><div class="Progress_container__XUEyd"><div class="Progress_header__LaIyz"><div class="Progress_title__VZsl7">Progress</div><div class="Progress_percent__efuIA">67%</div></div><div class="Progress_empty__DJpw8"><div class="Progress_filled__zrjS2"></div></div></div></div><div class="Card_card__T6wSe"><div class="Header_header__V3H1D"><div><h2 class="Header_title__UWF7H">Project Title goes here</h2></div><div class="IconBar_bar__ECJMi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.84 2.96L13.04 6.16L3.2 16H0V12.8L9.84 2.96ZM10.96 1.84L12.8 0L16 3.2L14.16 5.04L10.96 1.84Z" fill="#8B8B8B"></path></svg><svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4C3.10667 4 4 3.10667 4 2C4 0.893333 3.10667 0 2 0C0.893333 0 0 0.893333 0 2C0 3.10667 0.893333 4 2 4ZM2 6C0.893333 6 0 6.89333 0 8C0 9.10667 0.893333 10 2 10C3.10667 10 4 9.10667 4 8C4 6.89333 3.10667 6 2 6ZM2 12C0.893333 12 0 12.8933 0 14C0 15.1067 0.893333 16 2 16C3.10667 16 4 15.1067 4 14C4 12.8933 3.10667 12 2 12Z" fill="#8B8B8B"></path></svg></div></div><div class="Status_container__SExAx"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4" cy="4" r="4" fill="#00DB99"></circle></svg><p class="Status_name__RvJe5">Active</p></div><div class="Info_container__cXXXG"><div><div class="Date_container__LJZZi"><div class="Date_title__wTekM">Start date</div><div class="Date_text__oTuCO">12 Sep 2022</div></div></div><div class="Info_signalContainer__YiL-e"><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">14</div><div class="Signal_name__DB+QP">Tasks</div></div><svg width="1" height="42" viewBox="0 0 1 42" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.5" y1="2.70594e-08" x2="0.499998" y2="42" stroke="#CDDCEE"></line></svg><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">95</div><div class="Signal_name__DB+QP">Users</div></div></div></div><div class="Members_container__9Mys7"><div class="Members_title__qKwD5">Members</div><div class="Members_profiles__7qW0w"><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div></div></div><div class="Progress_container__XUEyd"><div class="Progress_header__LaIyz"><div class="Progress_title__VZsl7">Progress</div><div class="Progress_percent__efuIA">67%</div></div><div class="Progress_empty__DJpw8"><div class="Progress_filled__zrjS2"></div></div></div></div><div class="Card_card__T6wSe"><div class="Header_header__V3H1D"><div><h2 class="Header_title__UWF7H">Project Title goes here</h2></div><div class="IconBar_bar__ECJMi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.84 2.96L13.04 6.16L3.2 16H0V12.8L9.84 2.96ZM10.96 1.84L12.8 0L16 3.2L14.16 5.04L10.96 1.84Z" fill="#8B8B8B"></path></svg><svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4C3.10667 4 4 3.10667 4 2C4 0.893333 3.10667 0 2 0C0.893333 0 0 0.893333 0 2C0 3.10667 0.893333 4 2 4ZM2 6C0.893333 6 0 6.89333 0 8C0 9.10667 0.893333 10 2 10C3.10667 10 4 9.10667 4 8C4 6.89333 3.10667 6 2 6ZM2 12C0.893333 12 0 12.8933 0 14C0 15.1067 0.893333 16 2 16C3.10667 16 4 15.1067 4 14C4 12.8933 3.10667 12 2 12Z" fill="#8B8B8B"></path></svg></div></div><div class="Status_container__SExAx"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4" cy="4" r="4" fill="#00DB99"></circle></svg><p class="Status_name__RvJe5">Active</p></div><div class="Info_container__cXXXG"><div><div class="Date_container__LJZZi"><div class="Date_title__wTekM">Start date</div><div class="Date_text__oTuCO">12 Sep 2022</div></div></div><div class="Info_signalContainer__YiL-e"><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">14</div><div class="Signal_name__DB+QP">Tasks</div></div><svg width="1" height="42" viewBox="0 0 1 42" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.5" y1="2.70594e-08" x2="0.499998" y2="42" stroke="#CDDCEE"></line></svg><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">95</div><div class="Signal_name__DB+QP">Users</div></div></div></div><div class="Members_container__9Mys7"><div class="Members_title__qKwD5">Members</div><div class="Members_profiles__7qW0w"><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div></div></div><div class="Progress_container__XUEyd"><div class="Progress_header__LaIyz"><div class="Progress_title__VZsl7">Progress</div><div class="Progress_percent__efuIA">67%</div></div><div class="Progress_empty__DJpw8"><div class="Progress_filled__zrjS2"></div></div></div></div><div class="Card_card__T6wSe"><div class="Header_header__V3H1D"><div><h2 class="Header_title__UWF7H">Project Title goes here</h2></div><div class="IconBar_bar__ECJMi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.84 2.96L13.04 6.16L3.2 16H0V12.8L9.84 2.96ZM10.96 1.84L12.8 0L16 3.2L14.16 5.04L10.96 1.84Z" fill="#8B8B8B"></path></svg><svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4C3.10667 4 4 3.10667 4 2C4 0.893333 3.10667 0 2 0C0.893333 0 0 0.893333 0 2C0 3.10667 0.893333 4 2 4ZM2 6C0.893333 6 0 6.89333 0 8C0 9.10667 0.893333 10 2 10C3.10667 10 4 9.10667 4 8C4 6.89333 3.10667 6 2 6ZM2 12C0.893333 12 0 12.8933 0 14C0 15.1067 0.893333 16 2 16C3.10667 16 4 15.1067 4 14C4 12.8933 3.10667 12 2 12Z" fill="#8B8B8B"></path></svg></div></div><div class="Status_container__SExAx"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4" cy="4" r="4" fill="#00DB99"></circle></svg><p class="Status_name__RvJe5">Active</p></div><div class="Info_container__cXXXG"><div><div class="Date_container__LJZZi"><div class="Date_title__wTekM">Start date</div><div class="Date_text__oTuCO">12 Sep 2022</div></div></div><div class="Info_signalContainer__YiL-e"><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">14</div><div class="Signal_name__DB+QP">Tasks</div></div><svg width="1" height="42" viewBox="0 0 1 42" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.5" y1="2.70594e-08" x2="0.499998" y2="42" stroke="#CDDCEE"></line></svg><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">95</div><div class="Signal_name__DB+QP">Users</div></div></div></div><div class="Members_container__9Mys7"><div class="Members_title__qKwD5">Members</div><div class="Members_profiles__7qW0w"><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div></div></div><div class="Progress_container__XUEyd"><div class="Progress_header__LaIyz"><div class="Progress_title__VZsl7">Progress</div><div class="Progress_percent__efuIA">67%</div></div><div class="Progress_empty__DJpw8"><div class="Progress_filled__zrjS2"></div></div></div></div><div class="Card_card__T6wSe"><div class="Header_header__V3H1D"><div><h2 class="Header_title__UWF7H">Project Title goes here</h2></div><div class="IconBar_bar__ECJMi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.84 2.96L13.04 6.16L3.2 16H0V12.8L9.84 2.96ZM10.96 1.84L12.8 0L16 3.2L14.16 5.04L10.96 1.84Z" fill="#8B8B8B"></path></svg><svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4C3.10667 4 4 3.10667 4 2C4 0.893333 3.10667 0 2 0C0.893333 0 0 0.893333 0 2C0 3.10667 0.893333 4 2 4ZM2 6C0.893333 6 0 6.89333 0 8C0 9.10667 0.893333 10 2 10C3.10667 10 4 9.10667 4 8C4 6.89333 3.10667 6 2 6ZM2 12C0.893333 12 0 12.8933 0 14C0 15.1067 0.893333 16 2 16C3.10667 16 4 15.1067 4 14C4 12.8933 3.10667 12 2 12Z" fill="#8B8B8B"></path></svg></div></div><div class="Status_container__SExAx"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4" cy="4" r="4" fill="#00DB99"></circle></svg><p class="Status_name__RvJe5">Active</p></div><div class="Info_container__cXXXG"><div><div class="Date_container__LJZZi"><div class="Date_title__wTekM">Start date</div><div class="Date_text__oTuCO">12 Sep 2022</div></div></div><div class="Info_signalContainer__YiL-e"><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">14</div><div class="Signal_name__DB+QP">Tasks</div></div><svg width="1" height="42" viewBox="0 0 1 42" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.5" y1="2.70594e-08" x2="0.499998" y2="42" stroke="#CDDCEE"></line></svg><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">95</div><div class="Signal_name__DB+QP">Users</div></div></div></div><div class="Members_container__9Mys7"><div class="Members_title__qKwD5">Members</div><div class="Members_profiles__7qW0w"><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div></div></div><div class="Progress_container__XUEyd"><div class="Progress_header__LaIyz"><div class="Progress_title__VZsl7">Progress</div><div class="Progress_percent__efuIA">67%</div></div><div class="Progress_empty__DJpw8"><div class="Progress_filled__zrjS2"></div></div></div></div><div class="Card_card__T6wSe"><div class="Header_header__V3H1D"><div><h2 class="Header_title__UWF7H">Project Title goes here</h2></div><div class="IconBar_bar__ECJMi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.84 2.96L13.04 6.16L3.2 16H0V12.8L9.84 2.96ZM10.96 1.84L12.8 0L16 3.2L14.16 5.04L10.96 1.84Z" fill="#8B8B8B"></path></svg><svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4C3.10667 4 4 3.10667 4 2C4 0.893333 3.10667 0 2 0C0.893333 0 0 0.893333 0 2C0 3.10667 0.893333 4 2 4ZM2 6C0.893333 6 0 6.89333 0 8C0 9.10667 0.893333 10 2 10C3.10667 10 4 9.10667 4 8C4 6.89333 3.10667 6 2 6ZM2 12C0.893333 12 0 12.8933 0 14C0 15.1067 0.893333 16 2 16C3.10667 16 4 15.1067 4 14C4 12.8933 3.10667 12 2 12Z" fill="#8B8B8B"></path></svg></div></div><div class="Status_container__SExAx"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4" cy="4" r="4" fill="#00DB99"></circle></svg><p class="Status_name__RvJe5">Active</p></div><div class="Info_container__cXXXG"><div><div class="Date_container__LJZZi"><div class="Date_title__wTekM">Start date</div><div class="Date_text__oTuCO">12 Sep 2022</div></div></div><div class="Info_signalContainer__YiL-e"><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">14</div><div class="Signal_name__DB+QP">Tasks</div></div><svg width="1" height="42" viewBox="0 0 1 42" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.5" y1="2.70594e-08" x2="0.499998" y2="42" stroke="#CDDCEE"></line></svg><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">95</div><div class="Signal_name__DB+QP">Users</div></div></div></div><div class="Members_container__9Mys7"><div class="Members_title__qKwD5">Members</div><div class="Members_profiles__7qW0w"><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div></div></div><div class="Progress_container__XUEyd"><div class="Progress_header__LaIyz"><div class="Progress_title__VZsl7">Progress</div><div class="Progress_percent__efuIA">67%</div></div><div class="Progress_empty__DJpw8"><div class="Progress_filled__zrjS2"></div></div></div></div><div class="Card_card__T6wSe"><div class="Header_header__V3H1D"><div><h2 class="Header_title__UWF7H">Project Title goes here</h2></div><div class="IconBar_bar__ECJMi"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.84 2.96L13.04 6.16L3.2 16H0V12.8L9.84 2.96ZM10.96 1.84L12.8 0L16 3.2L14.16 5.04L10.96 1.84Z" fill="#8B8B8B"></path></svg><svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 4C3.10667 4 4 3.10667 4 2C4 0.893333 3.10667 0 2 0C0.893333 0 0 0.893333 0 2C0 3.10667 0.893333 4 2 4ZM2 6C0.893333 6 0 6.89333 0 8C0 9.10667 0.893333 10 2 10C3.10667 10 4 9.10667 4 8C4 6.89333 3.10667 6 2 6ZM2 12C0.893333 12 0 12.8933 0 14C0 15.1067 0.893333 16 2 16C3.10667 16 4 15.1067 4 14C4 12.8933 3.10667 12 2 12Z" fill="#8B8B8B"></path></svg></div></div><div class="Status_container__SExAx"><svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4" cy="4" r="4" fill="#00DB99"></circle></svg><p class="Status_name__RvJe5">Active</p></div><div class="Info_container__cXXXG"><div><div class="Date_container__LJZZi"><div class="Date_title__wTekM">Start date</div><div class="Date_text__oTuCO">12 Sep 2022</div></div></div><div class="Info_signalContainer__YiL-e"><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">14</div><div class="Signal_name__DB+QP">Tasks</div></div><svg width="1" height="42" viewBox="0 0 1 42" fill="none" xmlns="http://www.w3.org/2000/svg"><line x1="0.5" y1="2.70594e-08" x2="0.499998" y2="42" stroke="#CDDCEE"></line></svg><div class="Signal_container__QG9gF"><div class="Signal_number__n18zi">95</div><div class="Signal_name__DB+QP">Users</div></div></div></div><div class="Members_container__9Mys7"><div class="Members_title__qKwD5">Members</div><div class="Members_profiles__7qW0w"><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div><div class="Members_img__JSPXM"></div></div></div><div class="Progress_container__XUEyd"><div class="Progress_header__LaIyz"><div class="Progress_title__VZsl7">Progress</div><div class="Progress_percent__efuIA">67%</div></div><div class="Progress_empty__DJpw8"><div class="Progress_filled__zrjS2"></div></div></div></div></div></div>
+
+
+</body></html>
