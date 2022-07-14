@@ -3,6 +3,7 @@ import style from "./Sidebar.module.scss";
 
 
 const Box = (props) => {
+
   return (
     <div className={style.box}>
         {props.img}
