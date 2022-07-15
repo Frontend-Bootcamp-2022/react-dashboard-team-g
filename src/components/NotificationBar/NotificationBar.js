@@ -6,19 +6,25 @@ import {
   SettingsIcon,
 } from "../../assets/icons/Icon";
 
-const NotificationBar = ({ style }) => {
+const NotificationBar = ({ styles }) => {
   const [notificationStatus, setNotificationStatus] = useState(false);
 
   const NotificationIcons = () => {
     return notificationStatus ? (
-      <NotificationIconRed fill="#717986" />
+      <NotificationIconRed
+        fill="#717986"
+        onClickAction={() => setNotificationStatus(false)}
+      />
     ) : (
-      <NotificationIcon fill="#8B8B8B" />
+      <NotificationIcon
+        fill="#8B8B8B"
+        onClickAction={() => setNotificationStatus(true)}
+      />
     );
   };
 
   return (
-    <div className={style.notification}>
+    <div className={styles.notification}>
       <MessageIcon fill="#717986" />
       <NotificationIcons />
       <SettingsIcon fill="#717986" />

@@ -1,24 +1,59 @@
-import CardCSS from "./Card.module.css";
+import { useState } from "react";
 
-import Header from "../Header/Header";
-import Status from "../status/Status";
-import Info from "../info/Info";
-import { MembersBar } from "../members/Members";
-import { Progress } from "../progress/Progress";
+import ProjectTop from "./CardItemTop";
+import ProjectMid from "./CardItemMiddle";
+import ProjectBottom from "./CardItemBottom";
 
-const CardTable = () => {
-  const titles = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  return titles.map((card, index) => {
-    return (
-      <div key={index} className={CardCSS.card}>
-        <Header />
-        <Status status="active" />
-        <Info />
-        <MembersBar />
-        <Progress percentage={13} />
-      </div>
+const Card = ({ styles, data, value }) => {
+  const { search, selected } = value;
+
+  const projectData = data
+    .filter(
+      (project) =>
+        project.name.toLowerCase().includes(search.toLowerCase()) ||
+        project.name.toLocaleLowerCase().includes(search.toLocaleLowerCase())
+    )
+    .filter(
+      (project) =>
+        project.status?.includes(selected) || project.activity === selected
     );
-  });
+
+  const hasProject = projectData.length ? (
+    projectData.map((project) => {
+      return (
+        <div key={project.id} className={styles.table__item}>
+          <div className={styles.card}>
+            <ProjectTop
+              styles={styles}
+              title={project.name}
+              activity={project.activity}
+            />
+            <ProjectMid
+              styles={styles}
+              date={project.startDate}
+              status={project.status}
+              number={{ one: 15, two: project.members.length }}
+            />
+            <ProjectBottom
+              styles={styles}
+              members={project.members}
+              progress={project.progress}
+            />
+          </div>
+        </div>
+      );
+    })
+  ) : (
+    <div className={styles.loading}>NO PROJECTS FOUND</div>
+  );
+
+  const Wrapper = data.length ? (
+    hasProject
+  ) : (
+    <div className={styles.loading}>LOADING...</div>
+  );
+
+  return Wrapper;
 };
 
-export default CardTable;
+export default Card;

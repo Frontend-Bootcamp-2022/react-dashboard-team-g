@@ -15,12 +15,19 @@ body {
   padding: 0;
 }
 
-.Wrapper {
+.wrapper {
   display: flex;
-}
 
-.App {
-  display: flex;
-  flex: 0 1 85%;
-  flex-direction: column;
+  &__left {
+    flex: 0 1 15%;
+    max-width: 400px;
+    min-width: 300px;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  &__right {
+    flex: 0 1 85%;
+    margin: 0 0 16px 0;
+  }
 }

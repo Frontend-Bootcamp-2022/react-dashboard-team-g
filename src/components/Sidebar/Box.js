@@ -1,15 +1,13 @@
-import React from 'react'
-import style from "./Sidebar.module.scss";
-
+import React from "react";
 
 const Box = (props) => {
-
+  const { styles } = props;
   return (
-    <div className={style.box}>
-        {props.img}
-        {props.name}
+    <div className={styles.box__item}>
+      {props.svg}
+      {props.name}
     </div>
-  )
-}
+  );
+};
 
-export default Box
+export default Box;
