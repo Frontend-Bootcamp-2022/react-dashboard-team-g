@@ -1,7 +1,16 @@
 * {
   box-sizing: border-box;
+
+  &::after {
+    box-sizing: border-box;
+  }
+
+  &::before {
+    box-sizing: border-box;
+  }
 }
+
 body {
-  margin: 16px;
-  padding: 16px;
+  margin: 0;
+  padding: 0;
 }
