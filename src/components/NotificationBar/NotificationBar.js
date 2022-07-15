@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   MessageIcon,
   NotificationIcon,
@@ -7,11 +7,20 @@ import {
 } from "../../assets/icons/Icon";
 
 const NotificationBar = ({ style }) => {
+  const [notificationStatus, setNotificationStatus] = useState(false);
+
+  const NotificationIcons = () => {
+    return notificationStatus ? (
+      <NotificationIconRed fill="#717986" />
+    ) : (
+      <NotificationIcon fill="#8B8B8B" />
+    );
+  };
+
   return (
     <div className={style.notification}>
       <MessageIcon fill="#717986" />
-      <NotificationIconRed fill="#717986" />
-      {/* <NotificationIcon fill="#8B8B8B" /> */}
+      <NotificationIcons />
       <SettingsIcon fill="#717986" />
     </div>
   );
